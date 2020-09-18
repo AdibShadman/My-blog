@@ -16,7 +16,8 @@
   },
   "scripts": {
     "start": "npx nodemon --exec npx babel-node src/server.js ",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --my_blog_backend && npm run build --prefix my_blog_backend"
   },
   "author": "",
   "license": "ISC"

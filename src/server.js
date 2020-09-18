@@ -79,8 +79,14 @@ app.post("/api/articles/:name/add-comment", (req, res) => {
     res.status(200).json(updatedArticleInfo);
   }, res);
 });
-app.get("*", (req, res) => {
+if(process.env.NODE_ENV === 'production')
+{
+  app.use(express.static('/build/index.html'));
+  app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname + "/build/index.html"));
+}
+
+
 });
 
 app.listen(9000, () => console.log("Listening on port 9000"));
