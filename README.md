@@ -12,3 +12,7 @@ How to install and run:
  4. Run it.
 
 Built with: MERN stack, Babelrc, ESLint.  
+
+Here are some pictures of product demonstations: 
+https://github.com/AdibShadman/my-blog/blob/main/Full-Stack-Blog-add-comment.png
+https://github.com/AdibShadman/my-blog/blob/main/Full-Stack_Blog-Article-List.png
